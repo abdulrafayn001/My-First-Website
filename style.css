@@ -24,10 +24,6 @@ header{
     background-color: aqua;
     font-size: 25px;
 }
-#header{
-    position: sticky;
-    top: 0;
-}
 
 ul li ul {
     background:rgb(50, 58, 64);
@@ -72,6 +68,10 @@ footer{
     li.nav-item{
       display: none;
     }
+    #header{
+        position: sticky;
+        top: 0;
+    }
     .row > .col-sm-8{
         display: none;
     }
@@ -86,7 +86,57 @@ footer{
         display: block;
         text-decoration: none;
     }
-    .row > div{
+    .row > .col-sm-12{
         border: 3px solid rgb(50, 58, 64);
     }
+    .container{
+        height: auto;
+    }
+    .row > .col-2-md{
+        background-color: white;
+    }
+
 }
+
+
+/* Education */
+
+#ucp-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 58, 64);
+    display: block;
+}
+
+#pgc-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 58, 64);
+    display: block;
+}
+
+#aps-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 58, 64);
+    display: block;
+}
+
+.details {
+    font-size: 25px;
+    opacity: 0.75;
+}
+.name {
+    font-family: 'Anton', sans-serif; 
+    font-size: 40px; 
+}
+li {
+    font-size: 25px;
+}
+.row > .col-2-md, .row > .col-10-md{
+    margin:0;
+}
+
