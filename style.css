@@ -1,0 +1,92 @@
+a{
+    text-decoration: none;
+}
+.hero{
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(to bottom right, #2196F3, #009688);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h{
+    text-align: center;
+}
+.h:hover{
+    font-family: 'Kaushan Script', cursive;
+    color: #FDDB27FF;
+}
+header{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    background-color: aqua;
+    font-size: 25px;
+}
+#header{
+    position: sticky;
+    top: 0;
+}
+
+ul li ul {
+    background:rgb(50, 58, 64);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.nav-item:hover, .logo:hover{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+#profile-pic {
+    width: 280px;
+    height: 280px;
+    border-radius: 0%;
+    display: block;
+}
+.row >div{
+    background-color: aliceblue;
+    padding: 5%;
+    margin-top: 5%;
+}
+.container{
+    height: auto;
+}
+#hero{
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(50, 58, 64);
+    color: azure;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+@media screen and (max-width: 1080px) {
+    li.nav-item{
+      display: none;
+    }
+    .row > .col-sm-8{
+        display: none;
+    }
+    
+    ul li:hover > ul,
+    ul li:hover > a,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        text-decoration: none;
+    }
+    .row > div{
+        border: 3px solid rgb(50, 58, 64);
+    }
+}
